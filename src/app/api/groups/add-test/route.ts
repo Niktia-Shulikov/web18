@@ -1,7 +1,7 @@
 import { dbInit } from '@/db/AppDataSource';
 import { addGroupDb } from '@/db/groupDb';
 
-export async function POST(): Promise<Response> {
+export async function GET(): Promise<Response> {
   await dbInit();
 
   const newGroups = [];
